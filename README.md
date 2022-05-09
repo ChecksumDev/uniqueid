@@ -37,7 +37,7 @@ The spec consists of three parts:
       
 A basic identifier would look like this: 
 
-NAME[TYPE(a=b, ...)]
+NAME[TYPE(a=b, ...), ...]
 
 NAME - Optional, defaults to None
 TYPE - The type of identifier, e.g. CPU, GPU, etc.
