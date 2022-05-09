@@ -1,0 +1,25 @@
+version: 2
+updates:
+  # Cargo dependencies
+  - package-ecosystem: "cargo"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    assignees:
+      - "checksumdev"
+    labels:
+      - "dependencies"
+      - "cargo"
+    versioning-strategy: "auto"
+    target-branch: "main"
+
+  # GitHub Actions dependencies
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "dependencies"
+      - "github-actions"
+    assignees:
+      - "checksumdev"
