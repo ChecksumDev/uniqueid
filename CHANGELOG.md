@@ -1,3 +1,12 @@
+## [0.2.1](https://github.com/ChecksumDev/uniqueid/compare/v0.2.0...v0.2.1) (2022-05-18)
+
+
+### Bug Fixes
+
+* :art: Rename some structs, reformat the codebase, documentation and tests! ([0969ef4](https://github.com/ChecksumDev/uniqueid/commit/0969ef458997be30039c871b52e89f1b456bbc35))
+
+
+
 # [0.2.0](https://github.com/ChecksumDev/uniqueid/compare/v0.1.0...v0.2.0) (2022-05-16)
 
 
