@@ -1,3 +1,12 @@
+## [0.2.2](https://github.com/ChecksumDev/uniqueid/compare/v0.2.1...v0.2.2) (2022-05-18)
+
+
+### Bug Fixes
+
+* :ambulance: Refractoring to comply to README.md ([79e83df](https://github.com/ChecksumDev/uniqueid/commit/79e83df1d8d8397b9772dbf637ab6f26bb8eafea))
+
+
+
 ## [0.2.1](https://github.com/ChecksumDev/uniqueid/compare/v0.2.0...v0.2.1) (2022-05-18)
 
 
