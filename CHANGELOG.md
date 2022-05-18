@@ -1,3 +1,12 @@
+## [0.2.5](https://github.com/ChecksumDev/uniqueid/compare/v0.2.4...v0.2.5) (2022-05-18)
+
+
+### Bug Fixes
+
+* :white_check_mark: Update tests because I already forgot what I just did :trollface: ([4cad114](https://github.com/ChecksumDev/uniqueid/commit/4cad11482874f77ae90a9db0dc5d9e48c42c429b))
+
+
+
 ## [0.2.4](https://github.com/ChecksumDev/uniqueid/compare/v0.2.3...v0.2.4) (2022-05-18)
 
 
