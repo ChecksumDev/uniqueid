@@ -14,9 +14,9 @@
     builder.add(IdentifierType::RAM);
     builder.add(IdentifierType::DISK);
 
-    let identifier = builder.build(false); // false = do not hash the identifier (useful for debugging)
+    let identifier = builder.build();
 
-    println!("{}", identifier.to_string());
+    println!("{}", identifier.to_string(false)); // false = do not hash the identifier (useful for debugging)
 ```
 
 ___
