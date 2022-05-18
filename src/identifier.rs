@@ -4,7 +4,7 @@ use sha3::{Digest, Sha3_512};
 use sysinfo::{self, DiskExt, ProcessorExt, System, SystemExt};
 
 /// Enum representing the different types of possible identifiers
-#[derive(Debug, Clone, PartialEq, Eq, Hash)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
 pub enum IdentifierType {
     CPU,
     // GPU, // TODO: Add GPU support
@@ -315,7 +315,7 @@ impl Identifier {
     /// Builds the Identifier object and returns it as a String.
     /// # Arguments
     /// * `hash` - If true, the Identifier will be hashed with SHA3-512.
-    pub fn build(&self, hash: bool) -> String {
+    pub fn to_string(&self, hash: bool) -> String {
         let mut result = String::new();
 
         if let Some(name) = &self.name {
@@ -345,19 +345,10 @@ impl Identifier {
 }
 
 /// IdentifierBuilder is a helper struct for building Identifier objects.
-#[derive(Debug, Clone, PartialEq, Eq, Hash)]
+#[derive(Debug, Clone, PartialEq, Eq, Hash, Default)]
 pub struct IdentifierBuilder {
     pub name: Option<String>,
     pub data: Vec<IdentifierTypeDataList>,
-}
-
-impl Default for IdentifierBuilder {
-    fn default() -> Self {
-        Self {
-            name: None,
-            data: Vec::new(),
-        }
-    }
 }
 
 impl IdentifierBuilder {
@@ -443,10 +434,15 @@ mod tests {
 
         builder.name("test");
         builder.add(IdentifierType::CPU);
+        builder.add(IdentifierType::RAM);
+        builder.add(IdentifierType::DISK);
 
         let identifier = builder.build();
 
         assert_eq!(identifier.name, Some("test".to_string()));
-        assert_eq!(identifier.data.len(), 1);
+        assert_eq!(identifier.data.len(), 3);
+
+        println!("{}", identifier.to_string(false));
+        println!("{}", identifier.to_string(true));
     }
 }

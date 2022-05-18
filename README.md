@@ -5,18 +5,18 @@
 ## Example usage
 
  ```rust
- use uniqueid::IdentifierBuilder;
- 
- let identifier = IdentifierBuilder::new()
-     .name("HWID") // optional
-     .add(IdentifierTypeName::CPU)
-     .add(IdentifierTypeName::RAM) 
-     .add(IdentifierTypeName::DISK)
-     .build();
- 
- let result = identifier.build(false); // false = don't hash the output
- 
- println!("{}", result);
+    use uniqueid::{IdentifierBuilder, IdentifierType};
+
+    let mut builder = IdentifierBuilder::default();
+    
+    builder.name("test");
+    builder.add(IdentifierType::CPU);
+    builder.add(IdentifierType::RAM);
+    builder.add(IdentifierType::DISK);
+
+    let identifier = builder.build();
+
+    println!("{}", identifier.to_string());
 ```
 
 ___
