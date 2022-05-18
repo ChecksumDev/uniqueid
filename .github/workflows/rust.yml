@@ -66,6 +66,7 @@ jobs:
       - if: ${{ steps.changelog.outputs.skipped == 'false' }}
         uses: actions-rs/cargo@v1
         with:
+          args: "--release"
           command: publish
 
       # Deploy the release artifacts to GitHub
