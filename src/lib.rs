@@ -62,7 +62,7 @@ impl IdentifierTypeData {
     /// * `value` - The value of the IdentifierTypeData object
     /// # Example
     /// ```
-    /// use uniqueid::identifier::IdentifierTypeData;
+    /// use uniqueid::IdentifierTypeData;
     ///
     /// let data = IdentifierTypeData::new("key", "value");
     ///
@@ -81,7 +81,7 @@ impl IdentifierTypeData {
     /// Returns the key of the IdentifierTypeData object.
     /// # Examples
     /// ```
-    /// use uniqueid::identifier::IdentifierTypeData;
+    /// use uniqueid::IdentifierTypeData;
     ///
     /// let data = IdentifierTypeData::new("key", "value");
     ///
@@ -94,7 +94,7 @@ impl IdentifierTypeData {
     /// Returns the value of the IdentifierTypeData object.
     /// # Examples
     /// ```
-    /// use uniqueid::identifier::IdentifierTypeData;
+    /// use uniqueid::IdentifierTypeData;
     ///
     /// let data = IdentifierTypeData::new("key", "value");
     ///
@@ -109,7 +109,7 @@ impl Display for IdentifierTypeData {
     /// Returns the key and value in normal format. (key=value)
     /// # Examples
     /// ```
-    /// use uniqueid::identifier::IdentifierTypeData;
+    /// use uniqueid::IdentifierTypeData;
     ///
     /// let data = IdentifierTypeData::new("key", "value");
     ///
@@ -130,8 +130,8 @@ impl IdentifierTypeDataBuilder {
     /// Creates a new IdentifierTypeDataBuilder object.
     /// # Examples
     /// ```
-    /// use uniqueid::identifier::IdentifierTypeDataBuilder;
-    /// use uniqueid::identifier::IdentifierType;
+    /// use uniqueid::IdentifierTypeDataBuilder;
+    /// use uniqueid::IdentifierType;
     ///
     /// let builder = IdentifierTypeDataBuilder::new(IdentifierType::CPU);
     /// ```
@@ -148,8 +148,8 @@ impl IdentifierTypeDataBuilder {
     /// Adds a key-value pair to the IdentifierTypeDataBuilder object.
     /// # Examples
     /// ```
-    /// use uniqueid::identifier::IdentifierTypeDataBuilder;
-    /// use uniqueid::identifier::IdentifierType;
+    /// use uniqueid::IdentifierTypeDataBuilder;
+    /// use uniqueid::IdentifierType;
     ///
     /// let mut builder = IdentifierTypeDataBuilder::new(IdentifierType::CPU);
     /// builder.add("key", "value");
@@ -169,8 +169,8 @@ impl IdentifierTypeDataBuilder {
     /// Builds the IdentifierTypeData object into a string.
     /// # Examples
     /// ```
-    /// use uniqueid::identifier::IdentifierTypeDataBuilder;
-    /// use uniqueid::identifier::IdentifierType;
+    /// use uniqueid::IdentifierTypeDataBuilder;
+    /// use uniqueid::IdentifierType;
     ///
     /// let mut builder = IdentifierTypeDataBuilder::new(IdentifierType::CPU);
     ///
@@ -209,8 +209,8 @@ impl IdentifierTypeDataList {
     /// Creates a new IdentifierType object.
     /// # Examples
     /// ```
-    /// use uniqueid::identifier::IdentifierTypeDataList;
-    /// use uniqueid::identifier::IdentifierType;
+    /// use uniqueid::IdentifierTypeDataList;
+    /// use uniqueid::IdentifierType;
     ///
     /// let data = IdentifierTypeDataList::new(IdentifierType::CPU);
     /// ```
@@ -358,7 +358,7 @@ impl IdentifierBuilder {
     /// Creates a new IdentifierBuilder object.
     /// # Examples
     /// ```
-    /// use uniqueid::identifier::IdentifierBuilder;
+    /// use uniqueid::IdentifierBuilder;
     /// let builder = IdentifierBuilder::default();
     /// ```
     pub fn new<T: Into<String>>(name: Option<T>, data: Vec<IdentifierTypeDataList>) -> Self {
@@ -375,7 +375,7 @@ impl IdentifierBuilder {
     /// Sets the name of the Identifier.
     /// # Examples
     /// ```
-    /// use uniqueid::identifier::IdentifierBuilder;
+    /// use uniqueid::IdentifierBuilder;
     /// let mut builder = IdentifierBuilder::default();
     /// builder.name("test");
     ///
@@ -393,8 +393,8 @@ impl IdentifierBuilder {
     /// * `identifier` - The IdentifierType object to add.
     /// # Examples
     /// ```
-    /// use uniqueid::identifier::IdentifierBuilder;
-    /// use uniqueid::identifier::IdentifierType;
+    /// use uniqueid::IdentifierBuilder;
+    /// use uniqueid::IdentifierType;
     ///
     /// let mut builder = IdentifierBuilder::default();
     /// builder.add(IdentifierType::CPU);
@@ -411,8 +411,8 @@ impl IdentifierBuilder {
     /// Returns an Identifier object from the IdentifierBuilder.
     /// # Examples
     /// ```
-    /// use uniqueid::identifier::IdentifierBuilder;
-    /// use uniqueid::identifier::IdentifierType;
+    /// use uniqueid::IdentifierBuilder;
+    /// use uniqueid::IdentifierType;
     ///
     /// let mut builder = IdentifierBuilder::default();
     /// builder.add(IdentifierType::CPU);
