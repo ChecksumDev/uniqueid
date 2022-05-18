@@ -5,7 +5,7 @@
 ## Example usage
 
  ```rust
-    use uniqueid::identifier::{IdentifierBuilder, IdentifierType};
+    use uniqueid::{IdentifierBuilder, IdentifierType};
 
     let mut builder = IdentifierBuilder::default();
     
@@ -14,7 +14,7 @@
     builder.add(IdentifierType::RAM);
     builder.add(IdentifierType::DISK);
 
-    let identifier = builder.build();
+    let identifier = builder.build(false); // false = do not hash the identifier (useful for debugging)
 
     println!("{}", identifier.to_string());
 ```
