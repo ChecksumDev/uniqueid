@@ -1,3 +1,12 @@
+## [0.2.3](https://github.com/ChecksumDev/uniqueid/compare/v0.2.2...v0.2.3) (2022-05-18)
+
+
+### Bug Fixes
+
+* :art: Delete `identifier.rs`. Completely move project to single `lib.rs` ([aded9ad](https://github.com/ChecksumDev/uniqueid/commit/aded9adbc3116893834ce543ad6e1a339e569cb9))
+
+
+
 ## [0.2.2](https://github.com/ChecksumDev/uniqueid/compare/v0.2.1...v0.2.2) (2022-05-18)
 
 
