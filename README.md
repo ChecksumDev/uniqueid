@@ -5,7 +5,7 @@
 ## Example usage
 
  ```rust
-    use uniqueid::{IdentifierBuilder, IdentifierType};
+    use uniqueid::identifier::{IdentifierBuilder, IdentifierType};
 
     let mut builder = IdentifierBuilder::default();
     
