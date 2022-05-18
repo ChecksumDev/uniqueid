@@ -1,3 +1,12 @@
+## [0.2.6](https://github.com/ChecksumDev/uniqueid/compare/v0.2.5...v0.2.6) (2022-05-18)
+
+
+### Bug Fixes
+
+* :construction_worker: mmmm... cargo ([2adbfcc](https://github.com/ChecksumDev/uniqueid/commit/2adbfcc1726d14e8857c55ad0bbfde2417db13bc))
+
+
+
 ## [0.2.5](https://github.com/ChecksumDev/uniqueid/compare/v0.2.4...v0.2.5) (2022-05-18)
 
 
