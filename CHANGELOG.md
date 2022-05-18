@@ -1,3 +1,12 @@
+## [0.2.4](https://github.com/ChecksumDev/uniqueid/compare/v0.2.3...v0.2.4) (2022-05-18)
+
+
+### Bug Fixes
+
+* :memo: I just can't get my docs right can I? ([563b4e8](https://github.com/ChecksumDev/uniqueid/commit/563b4e8dd479a3624bbb8edc710cd2ab1a962fdb))
+
+
+
 ## [0.2.3](https://github.com/ChecksumDev/uniqueid/compare/v0.2.2...v0.2.3) (2022-05-18)
 
 
